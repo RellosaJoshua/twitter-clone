@@ -1,0 +1,183 @@
+:root {
+  --main--color: #00acee;
+  --text--color: rgb(92, 92, 92);
+  --secondary-color: rgb(163, 161, 161);
+  --main--text--color: rgb(235, 235, 235);
+  --input--bg--color: rgb(223, 223, 223);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: calibri;
+  color: var(--text--color);
+}
+
+html,
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.app {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* auth page */
+.auth-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.auth-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  width: 690px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.auth-input {
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  height: 60px;
+  margin-bottom: 15px;
+  background-color: var(--input--bg--color);
+}
+
+.auth-input input {
+  width: 480px;
+  padding-left: 10px;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--input--bg--color);
+  outline: none;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.auth-input input:focus {
+  border-bottom: 2px solid var(--main--color);
+}
+
+.auth-input label {
+  padding-left: 10px;
+  padding-top: 5px;
+  color: var(--secondary-color);
+}
+
+.auth-input input:focus + label {
+  color: var(--main--color);
+}
+
+.auth-form input[type="submit"] {
+  outline: none;
+  cursor: pointer;
+  width: 494px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--main--text--color);
+  background-color: var(--main--color);
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+}
+
+/* end of auth page */
+/* user page */
+nav {
+  float: left;
+  height: 100vh;
+  width: 260px;
+  border-right: 1px solid var(--input--bg--color);
+}
+
+nav ul {
+  list-style: none;
+  padding-top: 20px;
+}
+
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin: 20px 30px;
+  height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+nav ul li svg {
+  margin-right: 15px;
+  margin-left: 5px;
+  fill: var(--text--color);
+  width: 31px;
+  height: 31px;
+}
+
+nav ul .logout-container {
+  margin-top: 50px;
+  border: none;
+}
+
+nav ul .logout-button {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: var(--main--color);
+  border: none;
+  color: var(--main--text--color);
+  border-radius: 50px;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+}
+
+/* end of user page */
+/*# sourceMappingURL=main.css.map */
